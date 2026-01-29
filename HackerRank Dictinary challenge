@@ -1,0 +1,16 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=int(input())
+database={}
+for _ in range(n):
+    name,phonenumber=input().split()
+    database[name]=phonenumber
+while True:
+    try:
+        query=input()
+        if query in database:
+            print(f"{query}={database[query]}")
+        else:
+            print("Not found")
+    except EOFError:
+        break  
+        
