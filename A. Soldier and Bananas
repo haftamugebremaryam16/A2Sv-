@@ -1,0 +1,10 @@
+k,n,w=list(map(int,input().split()))
+price=0
+i=1
+while i<=w:
+    price+=k*i
+    i+=1
+if price>n:
+    print(price-n)
+else:
+    print(0)
