@@ -1,0 +1,12 @@
+curr_row=0
+curr_column=0
+for i in range(5):
+    row=list(map(int,input().split()))
+    for index,num in enumerate(row):
+        if num==1:
+            curr_row=index
+            curr_column=i
+column=abs(2-curr_column)
+row=abs(2-curr_row)
+print(column+row)
+    
